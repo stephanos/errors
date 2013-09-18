@@ -1,4 +1,4 @@
-errors [![Build Status](https://secure.travis-ci.org/101loops/errors.png)](https://travis-ci.org/101loops/reflector)
+errors [![Build Status](https://secure.travis-ci.org/101loops/errors.png)](https://travis-ci.org/101loops/errors)
 ======
 
 This Go package extends the standard package *errors* with useful utilities:
