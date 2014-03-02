@@ -1,13 +1,10 @@
 package errors
 
 import (
-	. "launchpad.net/gocheck"
+	. "github.com/101loops/bdd"
 	"testing"
 )
 
-func Test(t *testing.T) { TestingT(t) }
-
-type S struct {
+func TestSuite(t *testing.T) {
+	RunSpecs(t, "Errors Suite")
 }
-
-var _ = Suite(&S{})
