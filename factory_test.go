@@ -1,14 +1,14 @@
 package errors
 
 import (
-	. "launchpad.net/gocheck"
+	. "101loops/bdd"
 )
 
-// TESTS ==========================================================================================
+var _ = Describe("Utility", func() {
 
-func (s *S) TestNew(c *C) {
-
-	err := New("this is %s", "nice!")
-	c.Assert(err, NotNil)
-	c.Assert(err.Error(), Equals, "this is nice!")
-}
+	It("return image url", func() {
+		err := New("this is %s", "nice!")
+		Check(err, IsNil)
+		Check(err.Error(), Equals, "this is nice!")
+	})
+})
