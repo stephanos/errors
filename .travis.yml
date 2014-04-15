@@ -1,9 +1,8 @@
 language: go
 go:
-  - 1.1
   - 1.2
 
 install:
-  - go get github.com/101loops/bdd
+  - go get -u github.com/101loops/bdd
 
 script: go test -v ./...
