@@ -3,6 +3,6 @@ go:
   - 1.2
 
 install:
-  - go get -u github.com/101loops/bdd
+  - go get
 
 script: go test -v ./...
