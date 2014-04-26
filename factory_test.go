@@ -4,9 +4,9 @@ import (
 	. "github.com/101loops/bdd"
 )
 
-var _ = Describe("Utility", func() {
+var _ = Describe("Factory", func() {
 
-	It("return image url", func() {
+	It("create new error", func() {
 		err := New("this is %s", "nice!")
 		Check(err.Error(), Equals, "this is nice!")
 	})
